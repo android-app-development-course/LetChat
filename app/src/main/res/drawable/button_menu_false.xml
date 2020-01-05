@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#B3d3d7d4"/>
+            <size android:width="@dimen/h_6" android:height="@dimen/h_6"/>
+        </shape>
+    </item>
+
+    <item
+        android:drawable="@drawable/ic_button_menu"
+        android:width="@dimen/h_4"
+        android:height="@dimen/h_4"
+        android:gravity="center"/>
+</layer-list>

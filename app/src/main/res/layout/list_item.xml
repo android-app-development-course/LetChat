@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/bottomview"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:layout_gravity="right">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="删除"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/h_1"
+            android:background="@mipmap/ic_launcher"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/item_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vanson"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/item_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_tv"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Vanson"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

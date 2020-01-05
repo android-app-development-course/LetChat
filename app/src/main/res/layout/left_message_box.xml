@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/h_1"
+    android:layout_marginLeft="6dp"
+    android:layout_marginStart="6dp">
+    <ImageView
+        android:id="@+id/avatar_icon"
+        android:layout_width="@dimen/h_6"
+        android:layout_height="@dimen/h_6"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/message_content"
+        android:maxWidth="@dimen/w_60"
+        android:minHeight="@dimen/h_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/h_1"
+        android:paddingBottom="@dimen/h_1"
+        android:paddingLeft="@dimen/h_3"
+        android:paddingRight="@dimen/h_3"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        android:layout_toEndOf="@+id/avatar_icon"
+        android:layout_toRightOf="@+id/avatar_icon"
+        android:layout_marginStart="@dimen/h_1"
+        android:layout_marginLeft="@dimen/h_1"
+        android:layout_centerVertical="true"
+        android:background="@drawable/message_box" />
+</RelativeLayout>

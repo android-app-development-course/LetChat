@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+    <LinearLayout
+        android:id="@+id/chat_empty"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"/>
+
+    <com.example.letchat.MyViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chat_empty">
+    </com.example.letchat.MyViewPager>
+
+    <RadioGroup
+        android:id="@+id/bottom_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/h_6"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp">
+        <RadioButton
+            android:id="@+id/message"
+            android:layout_width="@dimen/h_6"
+            android:layout_height="@dimen/h_6"
+
+            android:checked="true"
+            android:button="@drawable/button_msg"
+            android:layout_marginStart="@dimen/h_3"
+            android:layout_marginLeft="@dimen/h_3"
+            android:layout_marginEnd="@dimen/h_3"
+            android:layout_marginRight="@dimen/h_3" />
+        <RadioButton
+            android:id="@+id/sweep"
+            android:layout_width="@dimen/h_6"
+            android:layout_height="@dimen/h_6"
+
+            android:button="@drawable/button_menu"
+            android:layout_marginStart="@dimen/h_3"
+            android:layout_marginLeft="@dimen/h_3"
+            android:layout_marginEnd="@dimen/h_3"
+            android:layout_marginRight="@dimen/h_3" />
+        <RadioButton
+            android:id="@+id/user"
+            android:layout_width="@dimen/h_6"
+            android:layout_height="@dimen/h_6"
+
+            android:button="@drawable/button_user"
+            android:layout_marginStart="@dimen/h_3"
+            android:layout_marginLeft="@dimen/h_3"
+            android:layout_marginEnd="@dimen/h_3"
+            android:layout_marginRight="@dimen/h_3" />
+    </RadioGroup>
+</RelativeLayout>

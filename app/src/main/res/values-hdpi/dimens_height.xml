@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="h_4">32px</dimen>
+    <dimen name="h_6">48px</dimen>
+    <dimen name="h_1">8px</dimen>
+    <dimen name="h_3">24px</dimen>
+    <dimen name="h_20">160px</dimen>
+    <dimen name="h_9">72px</dimen>
+</resources>
